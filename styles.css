@@ -280,10 +280,27 @@ details.faq .answer p:last-child { margin-bottom: 0; }
   background: rgba(156,90,60,0.08); border: 1px dashed rgba(156,90,60,0.45);
   border-radius: 12px; padding: 1rem 1.2rem; color: var(--cocoa); font-size: 0.95rem; margin-bottom: 2.4rem;
 }
-.legal h2 { margin-top: 2.4rem; margin-bottom: 0.6rem; font-size: 1.5rem; }
+.legal h2 { margin-top: 2.4rem; margin-bottom: 0.6rem; font-size: 1.5rem; scroll-margin-top: 90px; }
 .legal h2:first-of-type { margin-top: 0; }
+.legal h3 { font-family: var(--serif); color: var(--espresso); font-size: 1.2rem; margin-top: 1.8rem; margin-bottom: 0.4rem; scroll-margin-top: 90px; }
 .legal p { color: var(--cocoa); }
 .legal .updated { font-size: 0.85rem; letter-spacing: 0.04em; color: var(--muted); }
+.legal a { color: var(--ember); text-decoration: underline; text-underline-offset: 2px; word-break: break-word; }
+.legal a:hover { color: var(--cocoa); }
+.legal ul { margin: 0.4rem 0 1.2em; padding-left: 1.3rem; color: var(--cocoa); }
+.legal li { margin-bottom: 0.45rem; }
+.legal li > ul { margin-top: 0.45rem; }
+.legal .toc { list-style: none; padding-left: 0; }
+.legal .toc li { margin-bottom: 0.55rem; }
+.legal .lead-note {
+  background: var(--paper-deep); border-left: 3px solid var(--ember);
+  border-radius: 0 10px 10px 0; padding: 0.9rem 1.1rem; margin: 1.2rem 0;
+}
+.legal table { width: 100%; border-collapse: collapse; margin: 1.4rem 0; font-size: 0.92rem; }
+.legal th, .legal td { border: 1px solid var(--line); padding: 0.7rem 0.85rem; text-align: left; vertical-align: top; color: var(--cocoa); }
+.legal th { background: var(--paper-deep); color: var(--espresso); font-family: var(--sans); font-weight: 600; }
+.legal td.yn { text-align: center; font-weight: 600; color: var(--espresso); white-space: nowrap; }
+.legal .back-to-top { font-size: 0.82rem; }
 
 /* ---------- CTA band ---------- */
 .cta-band { text-align: center; }
