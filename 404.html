@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page Not Found — Susurr</title>
+  <meta name="description" content="This page seems to have slipped between the pages. Find your way back to Susurr." />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="theme-color" content="#2F231A" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="/index.html" aria-label="Susurr home">
+          <span class="mark" aria-hidden="true">S</span><b>Susurr</b>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/features.html">Features</a></li>
+          <li><a href="/support.html">Support</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+          <li class="nav-cta"><a class="btn btn--primary" href="/index.html#download">Download</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" style="min-height: 56vh; display: grid; place-items: center;">
+      <div class="container center">
+        <p class="eyebrow rise rise-1">Error 404</p>
+        <h1 class="display rise rise-2" style="font-size: clamp(3rem, 9vw, 7rem);">404</h1>
+        <p class="lead measure rise rise-3">This page seems to have slipped <em>between the pages.</em> Let's find your way back to a quieter corner.</p>
+        <div class="cta-row rise rise-4" style="display:flex; justify-content:center; flex-wrap:wrap; gap:1rem; margin-top:1.6rem;">
+          <a class="btn btn--primary" href="/index.html">Return home</a>
+          <a class="btn btn--ghost" href="/features.html">Browse features</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="/index.html"><span class="mark" aria-hidden="true">S</span><b>Susurr</b></a>
+          <p class="footer-tag">A private, on-device reading companion for readers who want to remember what they read.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/features.html">Features</a></li>
+            <li><a href="/support.html">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+            <li><a href="/terms.html">Terms of Service</a></li>
+            <li><a href="/support.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Susurr. Made quietly, for readers.</p>
+        <p>Your data never leaves your device.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var nav = document.querySelector('.nav');
+      var btn = document.querySelector('.nav-toggle');
+      if (!nav || !btn) return;
+      btn.addEventListener('click', function () {
+        var open = nav.getAttribute('data-open') === 'true';
+        nav.setAttribute('data-open', String(!open));
+        btn.setAttribute('aria-expanded', String(!open));
+      });
+    })();
+  </script>
+</body>
+</html>
