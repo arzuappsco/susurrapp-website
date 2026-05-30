@@ -1,10 +1,227 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Susurr</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Susurr — A Private Reading Companion</title>
+  <meta name="description" content="Susurr is a private, on-device reading companion. Track your library, record voice reflections, keep written notes, and remember what you read — no account, no cloud." />
+  <link rel="canonical" href="https://susurr.app/" />
+  <meta name="theme-color" content="#2F231A" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Susurr — A Private Reading Companion" />
+  <meta property="og:description" content="Capture the thoughts between the pages. A quiet, private place to remember what you read." />
+  <meta property="og:image" content="assets/og-image.svg" />
+  <meta property="og:url" content="https://susurr.app/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Susurr",
+    "applicationCategory": "BookApplication",
+    "operatingSystem": "iOS",
+    "description": "A private, on-device reading companion for tracking books, recording voice reflections, and keeping reading notes.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
 </head>
 <body>
-    <h1>Susurr</h1>
-    <p>Your private reading companion.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html" aria-label="Susurr home">
+          <span class="mark" aria-hidden="true">S</span><b>Susurr</b>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li class="nav-cta"><a class="btn btn--primary" href="#download">Download</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== HERO ===== -->
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow rise rise-1">A private reading companion</p>
+          <h1 class="display rise rise-2">Capture the thoughts <em>between the pages.</em></h1>
+          <p class="lead rise rise-3">Susurr is a quiet place to remember what you read — your library, your voice, your notes, all kept on your device and yours alone.</p>
+          <div class="cta-row rise rise-4">
+            <a class="appstore" href="#download" aria-label="Download Susurr on the App Store">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 1.43c.04 1.1-.38 2.18-1.07 2.96-.73.83-1.92 1.47-3.06 1.38-.13-1.07.4-2.2 1.05-2.9.74-.81 2-1.4 3.08-1.44zM20.5 17.2c-.55 1.27-.82 1.83-1.53 2.95-.99 1.56-2.39 3.5-4.12 3.51-1.54.02-1.93-1-4.02-.99-2.08.01-2.51 1.01-4.05.99-1.73-.02-3.06-1.77-4.05-3.33C-.06 16.99-.36 11.9 1.36 9.2c1.2-1.9 3.1-3.02 4.88-3.02 1.82 0 2.96 1 4.46 1 1.46 0 2.35-1 4.45-1 1.59 0 3.27.86 4.47 2.36-3.93 2.15-3.29 7.77.48 8.66z"/></svg>
+              <span class="as-text"><span class="as-small">Download on the</span><span class="as-big">App Store</span></span>
+            </a>
+            <a class="btn btn--ghost" href="features.html">Explore the features</a>
+          </div>
+          <p class="hero-note rise rise-5">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            No account. No cloud. Nothing leaves your phone.
+          </p>
+        </div>
+        <div class="hero-visual rise rise-3">
+          <!-- Replace with a real screenshot/device mockup later -->
+          <img src="assets/hero-shot.svg" width="400" height="820"
+               alt="Susurr app showing a book in progress and recent reading reflections" />
+        </div>
+      </div>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- ===== PHILOSOPHY ===== -->
+    <section class="philosophy section">
+      <div class="container center">
+        <p class="eyebrow">Reader-first, always</p>
+        <h2>A companion, not a platform.</h2>
+        <p class="lead measure">Susurr was made for the kind of reading that lingers. There is no feed to scroll, no profile to perform, no algorithm watching over your shoulder — only the book, your thoughts, and a place to keep them.</p>
+        <div class="pill-row">
+          <span class="pill">Private</span>
+          <span class="pill">Thoughtful</span>
+          <span class="pill">Literary</span>
+          <span class="pill">Cozy</span>
+          <span class="pill">Reflective</span>
+          <span class="pill">Calm</span>
+          <span class="pill">Personal</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURE PREVIEW ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="center" style="margin-bottom: clamp(2rem,4vw,3.2rem)">
+          <p class="eyebrow">What lives inside</p>
+          <h2>Everything to remember a book by.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="f-card">
+            <div class="f-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h13a2 2 0 0 1 2 2v13H6a2 2 0 0 1-2-2V5z"/><path d="M19 7H6a2 2 0 0 0-2 2"/></svg></div>
+            <h3>Library Tracking</h3>
+            <p>Catalogue the books you own and read, and shape them into shelves that feel like your own.</p>
+          </article>
+          <article class="f-card">
+            <div class="f-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v3"/></svg></div>
+            <h3>Voice Reflections</h3>
+            <p>Speak your thoughts aloud the moment you close the cover. Recordings stay on your device.</p>
+          </article>
+          <article class="f-card">
+            <div class="f-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h11l3 3v13H5z"/><path d="M8 10h8M8 14h6"/></svg></div>
+            <h3>Reading Notes</h3>
+            <p>Jot a passage, a question, or a half-formed idea. Tie each note to its page and its book.</p>
+          </article>
+          <article class="f-card">
+            <div class="f-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"/><path d="M18 15l.9 2.1L21 18l-2.1.9L18 21l-.9-2.1L15 18l2.1-.9z"/></svg></div>
+            <h3>AI Recommendations</h3>
+            <p>Thoughtful suggestions drawn from your own shelves — for the next book worth your evening.</p>
+          </article>
+          <article class="f-card">
+            <div class="f-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12m0 0l-4-4m4 4l4-4"/><path d="M5 17v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2"/></svg></div>
+            <h3>Local Backups</h3>
+            <p>Export your reading life to a single file, and bring it back whenever you like. You hold the keys.</p>
+          </article>
+          <article class="f-card">
+            <div class="f-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9.5 12l1.8 1.8L15 10"/></svg></div>
+            <h3>Privacy First</h3>
+            <p>No accounts, no servers, no tracking. Susurr works fully offline, because your reading is yours.</p>
+          </article>
+        </div>
+        <p class="center" style="margin-top:2.6rem">
+          <a class="btn btn--ghost" href="features.html">See every feature in detail →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== QUOTE BAND ===== -->
+    <section class="quote-band section">
+      <div class="container center">
+        <blockquote class="pull-quote">
+          <span class="dropcap">“</span>The faintest ink remembers more than the sharpest mind.<span class="dropcap">”</span>
+        </blockquote>
+        <p class="muted" style="margin-top:1.6rem; letter-spacing:0.04em">— the quiet idea behind Susurr</p>
+      </div>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- ===== DOWNLOAD / CTA ===== -->
+    <section class="cta-band section" id="download">
+      <div class="container">
+        <p class="eyebrow">Bring it home</p>
+        <h2 class="display">Begin your reading journal tonight.</h2>
+        <p class="lead measure">Free to download. Yours to keep. No sign-up between you and the first page.</p>
+        <div class="cta-row">
+          <a class="appstore" href="#" aria-label="Download Susurr on the App Store">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 1.43c.04 1.1-.38 2.18-1.07 2.96-.73.83-1.92 1.47-3.06 1.38-.13-1.07.4-2.2 1.05-2.9.74-.81 2-1.4 3.08-1.44zM20.5 17.2c-.55 1.27-.82 1.83-1.53 2.95-.99 1.56-2.39 3.5-4.12 3.51-1.54.02-1.93-1-4.02-.99-2.08.01-2.51 1.01-4.05.99-1.73-.02-3.06-1.77-4.05-3.33C-.06 16.99-.36 11.9 1.36 9.2c1.2-1.9 3.1-3.02 4.88-3.02 1.82 0 2.96 1 4.46 1 1.46 0 2.35-1 4.45-1 1.59 0 3.27.86 4.47 2.36-3.93 2.15-3.29 7.77.48 8.66z"/></svg>
+            <span class="as-text"><span class="as-small">Download on the</span><span class="as-big">App Store</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html"><span class="mark" aria-hidden="true">S</span><b>Susurr</b></a>
+          <p class="footer-tag">A private, on-device reading companion for readers who want to remember what they read.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="support.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Susurr. Made quietly, for readers.</p>
+        <p>Your data never leaves your device.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var nav = document.querySelector('.nav');
+      var btn = document.querySelector('.nav-toggle');
+      if (!nav || !btn) return;
+      btn.addEventListener('click', function () {
+        var open = nav.getAttribute('data-open') === 'true';
+        nav.setAttribute('data-open', String(!open));
+        btn.setAttribute('aria-expanded', String(!open));
+      });
+    })();
+  </script>
 </body>
 </html>
