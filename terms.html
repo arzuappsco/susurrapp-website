@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Service — Susurr</title>
+  <meta name="description" content="Susurr's terms of service governing your use of the Susurr reading companion app." />
+  <link rel="canonical" href="https://susurr.app/terms.html" />
+  <meta name="theme-color" content="#2F231A" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html" aria-label="Susurr home">
+          <span class="mark" aria-hidden="true">S</span><b>Susurr</b>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li class="nav-cta"><a class="btn btn--primary" href="index.html#download">Download</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="legal">
+          <p class="eyebrow">Susurr</p>
+          <h1 class="display" style="font-size: clamp(2.4rem, 4vw + 1rem, 3.6rem); margin-bottom: 0.6rem;">Terms of Service</h1>
+          <p class="updated">Last updated: <!-- TODO: add date --> __________</p>
+
+          <!-- ============================================================
+               PLACEHOLDER — paste your full terms of service below.
+               Replace everything between the START and END markers.
+               Use <h2> for section titles and <p> for paragraphs to
+               match the page styling.
+               ============================================================ -->
+          <p class="placeholder-note">
+            <strong>Note for the site owner:</strong> This is a placeholder. Paste your finalized terms of service
+            inside the marked section below. Keep the heading structure (<code>&lt;h2&gt;</code> for sections,
+            <code>&lt;p&gt;</code> for paragraphs) so it inherits the page styling.
+          </p>
+
+          <!-- ===== START: TERMS OF SERVICE CONTENT ===== -->
+
+          <h2>Acceptance of Terms</h2>
+          <p>By downloading or using Susurr, you agree to these terms. [Replace this section with your full acceptance language.]</p>
+
+          <h2>Use of the App</h2>
+          <p>[Describe acceptable use, the license you grant users, and any restrictions.]</p>
+
+          <h2>Your Content and Data</h2>
+          <p>[Clarify that users own their reading data, that it is stored on their device, and their responsibilities around backups.]</p>
+
+          <h2>Subscriptions and Purchases</h2>
+          <p>[Describe any optional paid features, billing through the App Store, renewals, and cancellations.]</p>
+
+          <h2>Disclaimers</h2>
+          <p>[Add your warranty disclaimers and "as is" language as advised by counsel.]</p>
+
+          <h2>Limitation of Liability</h2>
+          <p>[Add your limitation of liability language.]</p>
+
+          <h2>Changes to These Terms</h2>
+          <p>[Explain how and when you may update these terms.]</p>
+
+          <h2>Contact</h2>
+          <p>Questions about these terms? Email <a href="mailto:hello@susurr.app">hello@susurr.app</a>.</p>
+
+          <!-- ===== END: TERMS OF SERVICE CONTENT ===== -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html"><span class="mark" aria-hidden="true">S</span><b>Susurr</b></a>
+          <p class="footer-tag">A private, on-device reading companion for readers who want to remember what they read.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="support.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Susurr. Made quietly, for readers.</p>
+        <p>Your data never leaves your device.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var nav = document.querySelector('.nav');
+      var btn = document.querySelector('.nav-toggle');
+      if (!nav || !btn) return;
+      btn.addEventListener('click', function () {
+        var open = nav.getAttribute('data-open') === 'true';
+        nav.setAttribute('data-open', String(!open));
+        btn.setAttribute('aria-expanded', String(!open));
+      });
+    })();
+  </script>
+</body>
+</html>
